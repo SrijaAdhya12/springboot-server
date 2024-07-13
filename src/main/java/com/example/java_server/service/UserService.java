@@ -16,30 +16,25 @@ public class UserService {
     private List<User> userList;
 
     public UserService() {
-        userList = new ArrayList<>();
-
-        User user1 = new User(1, "Ida", 32, "ida@mail.com");
-        User user2 = new User(2, "Hans", 26, "hans@mail.com");
-        User user3 = new User(3, "Lars", 45, "lars@mail.com");
-        User user4 = new User(4, "Ben", 32, "ben@mail.com");
-        User user5 = new User(5, "Eva", 59, "eva@mail.com");
-
-        userList.addAll(Arrays.asList(user1, user2, user3, user4, user5));
+        userList = new ArrayList<>(Arrays.asList(
+                new User(1, "Ida", 32, "ida@gmail.com"),
+                new User(2, "John", 25, "john@gmail.com"),
+                new User(3, "Jane", 29, "jane@yahoo.com"),
+                new User(4, "Alice", 32, "alice@gmail.com"),
+                new User(5, "Hans", 32, "hans@gmail.com")));
     }
 
     public Optional<User> findById(Integer id) {
         Optional<User> optional = Optional.empty();
-        for (User user : userList) {
-            if (id == user.getId()) {
+        for (User user : userList)
+            if (id == user.getId())
                 optional = Optional.of(user);
-                return optional;
-            }
-        }
         return optional;
     }
 
     public Optional<List<User>> find() {
         return Optional.of(userList);
     }
+
 }
 

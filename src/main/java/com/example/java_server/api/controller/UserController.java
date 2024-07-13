@@ -38,12 +38,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
 public class UserController {
-
-    private final UserService userService;
+    private UserService userService;
 
     @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
+    }
+
+    @GetMapping("/users/{id}")
+    public ResponseEntity<User> getUser(@PathVariable Integer id) {
+        Optional<User> user = userService.findById(id);
+        if (user.isPresent())
+            return ResponseEntity.ok(user.get());
+
+        return ResponseEntity.notFound().build();
     }
 
     @GetMapping("/users")

@@ -1,4 +1,4 @@
-FROM maven:3.9.8-amazoncorretto AS build
+FROM maven:3.9.8-eclipse-temurin-17-alpine AS build
 LABEL MAINTAINER="srijaadhya.11sc.2020@gmail.com"
 COPY . .
 RUN mvn clean install

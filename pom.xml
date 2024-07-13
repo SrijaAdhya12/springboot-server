@@ -8,10 +8,10 @@
 		<version>3.2.8-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.javaserver</groupId>
-	<artifactId>javaserver</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>springboot-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>javaserver</name>
+	<name>springboot-server</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -27,7 +27,7 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

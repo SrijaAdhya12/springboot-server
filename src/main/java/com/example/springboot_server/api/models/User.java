@@ -1,4 +1,4 @@
-package com.example.java_server.api.model;
+package com.example.springboot_server.api.models;
 
 public class User {
     private int id;
@@ -44,6 +44,4 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-
-
 }

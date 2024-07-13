@@ -1,4 +1,4 @@
-package com.example.service;
+package com.example.java_server.service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,7 +7,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.example.api.model.User;
+import com.example.java_server.api.model.User;
 
 
 @Service
@@ -27,7 +27,7 @@ public class UserService {
         userList.addAll(Arrays.asList(user1, user2, user3, user4, user5));
     }
 
-    public Optional<User> getUser(Integer id) {
+    public Optional<User> findById(Integer id) {
         Optional<User> optional = Optional.empty();
         for (User user : userList) {
             if (id == user.getId()) {
@@ -38,5 +38,8 @@ public class UserService {
         return optional;
     }
 
+    public Optional<List<User>> find() {
+        return Optional.of(userList);
+    }
 }
 

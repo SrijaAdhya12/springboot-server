@@ -1,4 +1,4 @@
-package com.example.api.model;
+package com.example.java_server.api.model;
 
 public class User {
     private int id;

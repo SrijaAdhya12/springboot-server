@@ -1,4 +1,4 @@
-package com.example.api.controller;
+package com.example.java_server.api.controllers;
 
 import java.util.List;
 import java.util.Optional;

@@ -26,6 +26,15 @@ public class UserService {
 
         userList.addAll(Arrays.asList(user1, user2, user3, user4, user5));
     }
+
+    public Optional<User> findById(int id) {
+        Optional<User> optional = Optional.empty();
+        for (User user:userList)
+            if (id == user.getId())
+                optional = Optional.of(user);
+        return optional;
+
+    }
    
     public Optional<User> getUser(Integer id) {
         Optional<User> optional = Optional.empty();
@@ -37,4 +46,40 @@ public class UserService {
         }
         return optional;
     }
+
+    public User createUser(User user) {
+        int id = userList.isEmpty() ? 1 : userList.get(userList.size() - 1).getId() + 1;
+        User newuser = new User(id, user.getName(), user.getAge(), user.getEmail());
+        userList.add(newuser);
+        return newuser;
+    }
+
+    // public Optional<User> updatedUser(Integer id, User user){
+    //     Optional<User> existingUserOpt = findById(id);
+    //     if (existingUserOpt.isEmpty()) {
+    //         return Optional.empty();
+    //     }
+    //     int index = 0;
+    //     for (User user_ : userList) {
+    //         if (user_.getId() == id) {
+    //             break;
+    //         } 
+    //         index++;
+    //     }
+    //     userList.set(index, user);
+    //     return Optional.of(existingUserOpt.get());
+    // }
+
+    public Optional<User> deleteUser(int id) {
+        Optional<User> existingUserOpt = findById(id);
+        if (existingUserOpt.isEmpty())
+            return Optional.empty();
+
+        User existingUser = existingUserOpt.get();
+        userList.remove(existingUser);
+
+        return Optional.of(existingUser);
+    }
+
+
 }

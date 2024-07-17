@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import com.example.springboot_server.api.models.User;
 
-
 @Service
 public class UserService {
 
@@ -27,15 +26,19 @@ public class UserService {
         userList.addAll(Arrays.asList(user1, user2, user3, user4, user5));
     }
 
+    public Optional<List<User>> find() {
+        return Optional.of(userList);
+    }
+
     public Optional<User> findById(int id) {
         Optional<User> optional = Optional.empty();
-        for (User user:userList)
+        for (User user : userList)
             if (id == user.getId())
                 optional = Optional.of(user);
         return optional;
 
     }
-   
+
     public Optional<User> getUser(Integer id) {
         Optional<User> optional = Optional.empty();
         for (User user : userList) {
@@ -54,21 +57,42 @@ public class UserService {
         return newuser;
     }
 
-    // public Optional<User> updatedUser(Integer id, User user){
-    //     Optional<User> existingUserOpt = findById(id);
-    //     if (existingUserOpt.isEmpty()) {
-    //         return Optional.empty();
-    //     }
-    //     int index = 0;
-    //     for (User user_ : userList) {
-    //         if (user_.getId() == id) {
-    //             break;
-    //         } 
-    //         index++;
-    //     }
-    //     userList.set(index, user);
-    //     return Optional.of(existingUserOpt.get());
-    // }
+    public Optional<User> updateById(int id, User user) {
+        Optional<User> existingUserOpt = findById(id);
+        if (existingUserOpt.isEmpty())
+            return Optional.empty();
+
+        int index = 0;
+
+        for (User user_ : userList) {
+            if (user_.getId() == id) {
+                break;
+            }
+            index++;
+        }
+
+        userList.set(index, user);
+        return Optional.of(existingUserOpt.get());
+    }
+
+    public Optional<User> editUser(int id, User user) {
+        Optional<User> existingUserOpt = findById(id);
+        if (existingUserOpt.isEmpty()) {
+            return Optional.empty();
+        }
+
+        User existingUser = existingUserOpt.get();
+        if (user.getName() != null) {
+            existingUser.setName(user.getName());
+        }
+        if (user.getAge() != 0) {
+            existingUser.setAge(user.getAge());
+        }
+        if (user.getEmail() != null) {
+            existingUser.setEmail(user.getEmail());
+        }
+        return Optional.of(existingUser);
+    }
 
     public Optional<User> deleteUser(int id) {
         Optional<User> existingUserOpt = findById(id);
@@ -81,5 +105,9 @@ public class UserService {
         return Optional.of(existingUser);
     }
 
+    public String deleteAllUsers() {
+        userList.clear();
+        return "all users removed";
+    }
 
 }

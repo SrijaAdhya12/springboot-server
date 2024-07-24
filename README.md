@@ -20,7 +20,6 @@
 - [Tech Stack Used](#tech-stack-used)
 - [Preview](#preview)
 - [Best Contributors](#best-contributors)
-- [License](#License)
 
 ![line]
 
@@ -70,10 +69,6 @@
 </div>
 
 ![line]
-
-## License
-
-- See [LICENSE]
 
 **Srija, 2024**
 

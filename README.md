@@ -37,8 +37,8 @@
 
 
 ```sh
-> npm install
-> npm run dev
+> mvn clean install
+> mvn spring-boot:run
 ```
 
 ![line]

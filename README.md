@@ -44,12 +44,11 @@
 
 ## Tech Stack Used
 
-- Java
 - Spring Boot
 - Github
 - Markdown
 
-![Java](https://img.shields.io/badge/java-%23323330.svg?style=for-the-badge&logo=java&logoColor=%23F7DF1E)   ![Spring Boot](https://img.shields.io/badge/springboot-%23000000.svg?style=for-the-badge&logo=springboot&logoColor=white) ![Github](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23121011.svg?style=for-the-badge&logo=markdown&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/springboot-%23000000.svg?style=for-the-badge&logo=springboot&logoColor=white) ![Github](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23121011.svg?style=for-the-badge&logo=markdown&logoColor=white)
 ![line]
 
 ## Preview

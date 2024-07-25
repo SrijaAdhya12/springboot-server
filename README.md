@@ -72,7 +72,7 @@
 
 **Srija, 2024**
 
-[license]: https://github.com/warmachine028/magnifico/blob/main/LICENSE
+[license]: https://github.com/SrijaAdhya12/springboot-server/blob/main/LICENSE
 
 ![line]
 

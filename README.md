@@ -2,7 +2,7 @@
 
 <div align=center>
     <a href="https://github.com/SrijaAdhya12/springboot-server">
-        <img width="200" src="https://img.icons8.com/?size=100&id=90519&format=png&color=000000">
+        <img width="200" src="https://www.svgrepo.com/show/354380/spring-icon.svg" alt="Springboot Server">
     </a>
     <p style="font-family: roboto, calibri; font-size:12pt; font-style:italic"> A Spring boot server for REST API. </p>
     <a src="https://github.com/SrijaAdhya12/springboot-server/forks">

@@ -1,4 +1,4 @@
-    updated on: 24th July 2024, Wednesday
+    updated on: 25th July 2024, Wednesday
 
 <div align=center>
     <a href="https://github.com/SrijaAdhya12/springboot-server">

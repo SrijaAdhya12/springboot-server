@@ -26,10 +26,7 @@
 
 ## Introduction
 
-- A Virtual Reality Tools for Developers.
-- A project based on React js and Tailwind css.
-- A fully responsive and sleek website with seemless UI.
-
+- A Basic java Spring Boot server for REST API.
 
 ![line]
 

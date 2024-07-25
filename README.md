@@ -60,7 +60,7 @@
 ## Best Contributors
 
 <div align="center">
-    <a  href="https:/SrijaAdhya12/springboot/github.com//graphs/contributors">
+    <a  href="https:/SrijaAdhya12/springboot-server/github.com//graphs/contributors">
         <img src="https://contrib.rocks/image?repo=SrijaAdhya12/springboot-server" alt="contributors" />
     </a>
 </div>

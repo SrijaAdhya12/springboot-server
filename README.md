@@ -65,6 +65,14 @@
     </a>
 </div>
 
+## License
+
+-   see [LICENSE]
+
+**Srija, 2024**
+
+[license]: https://github.com/warmachine028/magnifico/blob/main/LICENSE
+
 ![line]
 
 ## Thank you, everyone 💚

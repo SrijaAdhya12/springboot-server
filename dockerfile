@@ -7,7 +7,7 @@ RUN mvn clean install
 FROM amazoncorretto:22-alpine3.19-jdk
 WORKDIR /app
 COPY --from=build target/*.jar app.jar
-COPY .env /app.jar
+COPY .env /app/.env
 EXPOSE 8080
 ENTRYPOINT [ "java","-jar","app.jar" ]
 

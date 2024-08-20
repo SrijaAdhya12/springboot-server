@@ -34,7 +34,7 @@ public class SpringbootServerApplication {
 		@Bean
 		public Dotenv dotenv() {
 			try {
-				return Dotenv.configure().directory("/app").load();
+				return Dotenv.configure().directory("/app.jar").load();
 			} catch (DotenvException e) {
 				throw new RuntimeException("Failed to load .env file", e);
 			}

@@ -34,7 +34,7 @@ public class SpringbootServerApplication {
 		@Bean
 		public Dotenv dotenv() {
 			try {
-				return Dotenv.configure().directory("/app").load();
+				return Dotenv.configure().directory(".").load();
 			} catch (DotenvException e) {
 				throw new RuntimeException("Failed to load .env file", e);
 			}
@@ -46,9 +46,10 @@ public class SpringbootServerApplication {
 	@Bean
 	public DatabaseConfig databaseConfig(Environment environment) {
 		return new DatabaseConfig(
-				environment.getProperty("username"),
-				environment.getProperty("password"),
-				environment.getProperty("url"));
+		environment.getProperty("SPRING_DATA_MONGODB_USERNAME"),
+    	environment.getProperty("SPRING_DATA_MONGODB_PASSWORD"),
+    	environment.getProperty("SPRING_DATA_MONGODB_URI")
+		);
 	}
 }
 

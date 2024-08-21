@@ -29,18 +29,19 @@ public class SpringbootServerApplication {
 		};
 	}
 
-	@Configuration
-	public static class EnvConfig {
-		@Bean
-		public Dotenv dotenv() {
-			try {
-				return Dotenv.configure().directory("../../../").load();
-			} catch (DotenvException e) {
-				throw new RuntimeException("Failed to load .env file", e);
-			}
-		}
-
-	}
+@Configuration
+public static class EnvConfig {
+    @Bean
+    public Environment environment() {
+        Properties properties = new Properties();
+        try {
+            properties.load(new FileInputStream(".env"));
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to load .env file", e);
+        }
+        return new EnvironmentAdapter(new PropertiesEnvironment(properties));
+    }
+}
 
     @Bean
     public DatabaseConfig databaseConfig(

@@ -42,17 +42,15 @@ public class SpringbootServerApplication {
 
 	}
 
-	@ConfigurationProperties(prefix = "spring.datasource")
-	@Bean
-	public DatabaseConfig databaseConfig(Environment environment) {
-		return new DatabaseConfig(
-		environment.getProperty("SPRING_DATA_MONGODB_USERNAME"),
-    	environment.getProperty("SPRING_DATA_MONGODB_PASSWORD"),
-    	environment.getProperty("SPRING_DATA_MONGODB_URI")
-		);
-	}
+    @Bean
+    public DatabaseConfig databaseConfig(
+            @Value("${SPRING_DATA_MONGODB_USERNAME}") String username,
+            @Value("${SPRING_DATA_MONGODB_PASSWORD}") String password,
+            @Value("${SPRING_DATA_MONGODB_URI}") String uri
+    ) {
+        return new DatabaseConfig(username, password, uri);
+    }
 }
-
 class DatabaseConfig {
 	private String username;
 	private String password;

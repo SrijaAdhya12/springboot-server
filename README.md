@@ -33,27 +33,31 @@
 
 ## Developement
 
+Run the following commands for running server (BackEnd)
 
 ```sh
-> mvn clean install
-> mvn spring-boot:run
+$> cd server
+$> mvn clean install
+$> mvn spring-boot:run
 ```
 
 ![line]
 
 ## Tech Stack Used
 
-- Spring Boot
-- Github
-- Markdown
+- Backend Framework: Spring Boot
+- Backend Language: Java
+- Packaging: Apache Maven
+- Containerisation: Docker
+- Database: MongoDB
+- Backend Hosting: Render
 
-![Spring Boot](https://img.shields.io/badge/springboot-%23000000.svg?style=for-the-badge&logo=springboot&logoColor=white) ![Github](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23121011.svg?style=for-the-badge&logo=markdown&logoColor=white)
-![line]
+![Spring Boot](https://img.shields.io/badge/springboot-%23000000.svg?style=for-the-badge&logo=springboot&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk) ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Mongo DB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white) 
+
 
 ## Preview
 
-# ![Springboot Server](https://github.com/user-attachments/assets/882c898d-30c4-4092-b30d-857c76d97d31)
-
+![image](https://github.com/user-attachments/assets/248c951d-00c5-4570-ab01-8eab8a173944)
 
 
 ![line]

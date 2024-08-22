@@ -1,6 +1,6 @@
 FROM maven:3.9.8-eclipse-temurin-22 AS build
 LABEL MAINTAINER="srijaadhya.11sc.2020@gmail.com"
-COPY . .
+COPY server . 
 RUN mvn clean install
 
 FROM amazoncorretto:22-alpine3.19-jdk

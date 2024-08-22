@@ -1,7 +1,7 @@
 package com.example.springboot_server.api.models;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 
 @Document("users")
 public class User {
@@ -25,5 +25,3 @@ public class User {
         this.name = name;
     }
 }
-
-    

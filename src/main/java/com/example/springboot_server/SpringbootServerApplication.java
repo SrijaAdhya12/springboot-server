@@ -6,7 +6,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication
-@PropertySource("classpath:.env")
+// @PropertySource("classpath:.env")
 @EnableMongoRepositories
 public class SpringbootServerApplication {
 

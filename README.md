@@ -1,4 +1,4 @@
-    updated on: 21st August 2024, Wednesday
+    updated on: 22nd August 2024, Thursday
 
 <div align=center>
     <a href="https://github.com/SrijaAdhya12/springboot-server">
@@ -82,4 +82,4 @@
 [line]: https://user-images.githubusercontent.com/75939390/137615281-3a875960-92cc-407f-97fe-fd2319bdb252.png
 [License]: https:/SrijaAdhya12/virtualR/github.com/blob/main/LICENSE
 
-<!-- 21/08/24 -->
+<!-- 22/08/24 -->

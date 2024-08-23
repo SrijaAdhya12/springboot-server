@@ -48,9 +48,9 @@ public class UserController {
 
         if (userOptional.isPresent()) {
             userRepository.delete(userOptional.get());
-            return ResponseEntity.noContent().build(); // Returns 204 No Content
+            return ResponseEntity.noContent().build();
         } else {
-            return ResponseEntity.notFound().build(); // Returns 404 Not Found
+            return ResponseEntity.notFound().build();
         }
     }
 

@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-@PropertySource("classpath:.env")
+// @PropertySource("classpath:.env")
 @EnableMongoRepositories
 public class SpringbootServerApplication {
 

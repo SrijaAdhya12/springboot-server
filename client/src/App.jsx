@@ -1,10 +1,10 @@
 import React from 'react'
-import UserList from './components/UserList'
+import { Home } from './pages'
 
 const App = () => {
   return (
 		<div>
-			<UserList/>
+			<Home/>
 		</div>
   )
 }

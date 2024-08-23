@@ -1,4 +1,4 @@
-    updated on: 22nd August 2024, Thursday
+    updated on: 23rd August 2024, Friday
 
 <div align=center>
     <a href="https://github.com/SrijaAdhya12/springboot-server">
@@ -86,4 +86,4 @@ $> mvn spring-boot:run
 [line]: https://user-images.githubusercontent.com/75939390/137615281-3a875960-92cc-407f-97fe-fd2319bdb252.png
 [License]: https:/SrijaAdhya12/virtualR/github.com/blob/main/LICENSE
 
-<!-- 22/08/24 -->
+<!-- 23/08/24 -->
